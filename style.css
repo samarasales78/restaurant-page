@@ -147,13 +147,6 @@ section {
   line-height: 1.8;
 }
 
-.about .row .image img {
-  width: 100%;
-  max-width: 40rem; /* tamanho ideal */
-  height: auto;
-  border-radius: 1rem;
-}
-
 .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -222,10 +215,18 @@ section {
   margin-top: 1rem 0;
 }
 
-.address {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.address { 
+  display: flex; 
+  align-items: center; 
+  flex-direction: column; 
+}
+
+.address h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .footer {
@@ -245,4 +246,158 @@ section {
 
 .footer .share img:hover {
   background-color: var(--main-color);
+}
+
+.flores .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.flores .box-container .box {
+  text-align: center;
+  border: var(--border);
+  padding: 5rem;
+  cursor: pointer;
+}
+
+.flores .box-container .box img {
+  height: 10rem;
+}
+
+.flores .box-container .box h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.flores .box-container .box .price {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+
+.flores .box-container .box .price span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.flores .box-container .box:hover {
+  background-color: #fff;
+}
+
+.flores .box-container .box:hover > * {
+  color: var(--black);
+}
+
+.flores .box-container .box:hover .btn {
+  background-color: var(--black);
+  color: #fff;
+
+}
+
+.creditos {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.creditos p {
+  margin: 0;
+  color: #ffffff; 
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#jogo-container {
+  background: rgba(20, 20, 20, 0.6);
+  border: 2px solid #d4af37; 
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  margin: 40px auto;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  color: #fff;
+  font-family: "Georgia", serif;
+}
+
+#jogo-container h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #f7d774; 
+}
+
+#jogo-container p {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+#startGame { /* botão */
+  background: #d4af37;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#startGame:hover {
+  background: #f7d774;
+  transform: scale(1.05);
+}
+
+#gameArea {
+  width: 300px;
+  height: 250px;
+  margin: 20px auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#snitch {
+  width: 32px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+#resultado {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #f7d774;
+}
+
+.info-cupom {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+
+#jogo-container .title {
+  font-size: 4rem !important;
+  color: var(--main-color) !important;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4rem !important;
+  font-family: "Roboto", sans-serif; 
+}
+
+#jogo-container .title span {
+  color: #fff !important;
 }
