@@ -17,6 +17,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+section {
+  scroll-margin-top: 90px; 
+}
+
+#desconto {
+  scroll-margin-top: 120px; 
+}
+
 body {
   background-color: var(--bg);
 }
